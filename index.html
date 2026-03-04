@@ -41,51 +41,56 @@
         body.dark-mode .powertoys-tile .tile-desc { color: #8a7355 !important; }
         /* ── La Digitale block ── */
         .digitale-block {
-            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            background: linear-gradient(135deg, #ecfeff 0%, #cffafe 100%);
             border-radius: 16px; padding: 2.5rem; margin-top: 3rem; margin-bottom: 3rem;
-            border: 1px solid #6ee7b7;
-            box-shadow: 0 8px 24px rgba(16,185,129,0.12);
+            border: 1px solid #67e8f9;
+            box-shadow: 0 8px 24px rgba(0,206,209,0.2);
         }
         .digitale-tile {
             background: rgba(255,255,255,0.55); padding: 1.25rem;
-            border-radius: 10px; border: 1px solid rgba(16,185,129,0.2);
+            border-radius: 10px; border: 1px solid rgba(0,206,209,0.28);
         }
         .digitale-cta {
             font-size: 0.82rem; padding: 0.45rem 0.75rem; border-radius: 6px;
-            background: #0f766e !important; color: #fff; font-weight: 600; line-height: 1.2;
+            background: #0e7490 !important; color: #fff; font-weight: 600; line-height: 1.2;
         }
-        .digitale-cta:hover { background: #0b5f59 !important; transform: none !important; }
+        .digitale-cta:hover { background: #0b5d73 !important; transform: none !important; }
         .digitale-open-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            color: #111827;
             font-size: 1.1rem;
             line-height: 1;
             padding: 0.35rem 0.5rem;
             border-radius: 999px;
-            background: #dcfce7;
-            border: 1px solid #86efac;
+            background: #cffafe;
+            border: 1px solid #67e8f9;
             transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
-        }
-        .digitale-open-btn:link,
-        .digitale-open-btn:visited,
-        .digitale-open-btn:hover,
-        .digitale-open-btn:active {
-            color: #111827;
         }
         .digitale-open-btn:hover {
             transform: translateY(-1px) scale(1.06);
-            box-shadow: 0 5px 12px rgba(16,185,129,0.25);
-            background: #bbf7d0;
+            box-shadow: 0 5px 12px rgba(0,206,209,0.35);
+            background: #a5f3fc;
         }
-        body.dark-mode .digitale-block { background: linear-gradient(135deg, #1a2e1a 0%, #1e3520 100%) !important; border-color: #2d5a2d !important; }
-        body.dark-mode .digitale-block h2 { color: #6ee7b7 !important; }
-        body.dark-mode .digitale-block > div > p { color: #a7f3d0 !important; }
+        .digitale-name-link,
+        .digitale-name-link:hover,
+        .digitale-name-link:focus {
+            text-decoration: none !important;
+            color: inherit;
+        }
+        body.dark-mode .digitale-block {
+            background: linear-gradient(135deg, #0b2f33 0%, #103a3f 100%) !important;
+            border-color: #1f6d73 !important;
+        }
+        body.dark-mode .digitale-block h2 { color: #67e8f9 !important; }
+        body.dark-mode .digitale-block p { color: #a5f3fc !important; }
+        body.dark-mode .digitale-block a { color: #67e8f9 !important; }
         body.dark-mode .digitale-tile { background: rgba(0,0,0,0.2) !important; border-color: rgba(255,255,255,0.07) !important; }
-        body.dark-mode .digitale-tile strong { color: #6ee7b7 !important; }
-        body.dark-mode .digitale-tile p { color: #a7f3d0 !important; }
+        body.dark-mode .digitale-tile strong { color: #67e8f9 !important; }
+        body.dark-mode .digitale-tile p { color: #a5f3fc !important; }
+        body.dark-mode .digitale-block a.digitale-open-btn { color: #0f5e66 !important; }
+        body.dark-mode .digitale-block a.digitale-open-btn:hover { color: #0a4f56 !important; }
         .feedback-section { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-radius: 16px; padding: 2.5rem; margin-top: 3rem; margin-bottom: 2rem; border: 2px solid #86efac; }
         .feedback-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 1.25rem; }
         .feedback-card { text-align: center; background: rgba(255,255,255,0.55); border: 1px solid rgba(34,197,94,0.25); border-radius: 14px; padding: 1.5rem; }
@@ -258,7 +263,8 @@
                     PowerToys
                 </a>
                 <a class="toc-item" href="#ladigitale-section">
-                    <span>🎲</span> La Digitale
+                    <img src="https://ladigitale.dev/blog/bl-themes/mediumish/img/logo.png" alt="La Digitale" style="width:18px;height:18px;vertical-align:middle;margin-right:5px;">
+                    La Digitale
                 </a>
                 <a class="toc-item" href="#workflow-section">
                     <span>⚡</span> Préparation de cours recommandée
@@ -763,42 +769,42 @@
         <section id="ladigitale-section" style="scroll-margin-top: 80px;">
             <div class="digitale-block">
                 <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                    <div style="font-size: 3rem;">🎲</div>
+                    <div><img src="https://ladigitale.dev/blog/bl-themes/mediumish/img/logo.png" alt="La Digitale" style="width:3rem;height:3rem;"></div>
                     <div>
-                        <h2 style="font-family: 'Crimson Pro', serif; font-size: 2.25rem; color: #065f46; margin-bottom: 0.25rem;">La Digitale - outils pédagogiques libres</h2>
-                        <p style="color: #047857; font-size: 1.05rem;">
-                            <a href="https://ladigitale.dev/" target="_blank" style="color: #047857; font-weight: 600; text-decoration: underline;">ladigitale.dev</a> - une suite d'outils gratuits, sans compte, sans pub, conçus pour l'éducation.
+                        <h2 style="font-family:'Crimson Pro',serif;font-size:2.25rem;color:#0f5e66;margin-bottom:0.25rem;">La Digitale - outils pédagogiques libres</h2>
+                        <p style="color:#0a6f78;font-size:1.05rem;">
+                            <a href="https://ladigitale.dev/" target="_blank" style="color:#0a6f78;font-weight:600;text-decoration:underline;">ladigitale.dev</a> - une suite d'outils gratuits, sans compte, sans pub, conçus pour l'éducation.
                         </p>
                     </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem;">
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🖥️</span><span>Digiscreen</span></strong><a href="https://ladigitale.dev/digiscreen/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de créer un fond d'écran interactif pour la classe en présence ou à distance.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://ladigitale.dev/digiscreen/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🖥️</span><span>Digiscreen</span></strong></a><a href="https://ladigitale.dev/digiscreen/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de créer un fond d'écran interactif pour la classe en présence ou à distance.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🌩️</span><span>Digistorm</span></strong><a href="https://digistorm.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de créer et d'animer des sondages, des remue-méninges et des quiz.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://digistorm.app/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🌩️</span><span>Digistorm</span></strong></a><a href="https://digistorm.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de créer et d'animer des sondages, des remue-méninges et des quiz.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">✍️</span><span>Digiboard</span></strong><a href="https://digiboard.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de créer des tableaux blancs collaboratifs.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://digiboard.app/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">✍️</span><span>Digiboard</span></strong></a><a href="https://digiboard.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de créer des tableaux blancs collaboratifs.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🗂️</span><span>Digipad</span></strong><a href="https://digipad.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de créer des murs multimédias pour vos activités collaboratives.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://digipad.app/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🗂️</span><span>Digipad</span></strong></a><a href="https://digipad.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de créer des murs multimédias pour vos activités collaboratives.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">☁️</span><span>Digiwords</span></strong><a href="https://ladigitale.dev/digiwords/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de créer des nuages de mots.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://ladigitale.dev/digiwords/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">☁️</span><span>Digiwords</span></strong></a><a href="https://ladigitale.dev/digiwords/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de créer des nuages de mots.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🧠</span><span>Digiquiz</span></strong><a href="https://ladigitale.dev/digiquiz/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de lire et partager des contenus H5P en ligne.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://ladigitale.dev/digiquiz/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🧠</span><span>Digiquiz</span></strong></a><a href="https://ladigitale.dev/digiquiz/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de lire et partager des contenus H5P en ligne.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🎬</span><span>Digiview</span></strong><a href="https://ladigitale.dev/digiview/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de visionner des vidéos YouTube sans distraction dans vos cours en présence ou à distance.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://ladigitale.dev/digiview/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🎬</span><span>Digiview</span></strong></a><a href="https://ladigitale.dev/digiview/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de visionner des vidéos YouTube sans distraction dans vos cours en présence ou à distance.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🧑‍💻</span><span>Digicode</span></strong><a href="https://ladigitale.dev/digicode/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de créer des codes QR pour partager simplement des contenus sur mobiles.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://ladigitale.dev/digicode/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🧑‍💻</span><span>Digicode</span></strong></a><a href="https://ladigitale.dev/digicode/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de créer des codes QR pour partager simplement des contenus sur mobiles.</p>
                     </div>
                     <div class="digitale-tile">
-                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><strong style="color:#065f46;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🔔</span><span>Digibuzzer</span></strong><a href="https://digibuzzer.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">🗗</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#047857;">Permet de jouer autour d'un buzzer connecté avec un principe de question/réponse.</p>
+                        <div style="display:flex;align-items:center;justify-content:space-between;gap:0.6rem;"><a href="https://digibuzzer.app/" target="_blank" class="digitale-name-link"><strong style="color:#0f5e66;display:flex;align-items:center;gap:0.45rem;"><span style="font-size:1.5rem;line-height:1;">🔔</span><span>Digibuzzer</span></strong></a><a href="https://digibuzzer.app/" target="_blank" class="digitale-open-btn" aria-label="Ouvrir l'outil" title="Ouvrir l'outil">➚</a></div><p style="font-size:0.9rem;margin-top:0.4rem;color:#0a6f78;">Permet de jouer autour d'un buzzer connecté avec un principe de question/réponse.</p>
                     </div>
                 </div>
                 <div class="back-to-toc"><a href="#toc">↑ Retour au menu</a></div>
